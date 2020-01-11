@@ -1,0 +1,30 @@
+<div class="content-overview">
+    <div class="inner-style">
+        <h2 class="content-heading"><span class="style-scope ">6</span>. <span
+                class="style-scope google-codelab-step">Publish to npm</span></h2>
+        <p>In this codelab activity, we will use React framework to illustrate the usage of our Web Component in other
+            frameworks.</p>
+        <h3>Using our web component in React</h3>
+        <p>Create a new react app and inside the index.html, use the reference to your main.js script from npm.</p>
+
+        <pre style="background: darkgray; padding: 6px;"><code style=" color: black;">//Inside index.html
+    
+    &lt;script src="https://unpkg.com/@nishugoel/prod-card@0.0.5/main.js"&gt;&lt;/script&gt;
+        
+//Use the custom element in the App.js file  
+        
+    &lt;prod-card username='Enter your name' password='Enter new password' 
+      btnname='Sign in'&gt;&lt;/prod-card&gt;
+</code></pre>
+        <h3>Install webcomponents.js
+        </h3>
+        <pre style="background: darkgray; padding: 6px;"><code style=" color: black;">npm install --save @webcomponents/webcomponentsjs</code></pre>
+        <p>Put the required polyfills for custom-elements-es5-adapter.js and webcomponents-bundle.js</p>
+        <p>And finally use the custom element in your app.js file with your own property values to the component.</p>
+        <div style="text-align: center; "><img src="../../assets/images/usageinReact.png" alt="usageinReact.png">
+        </div>
+        <h3 align="center">And there we go!
+        </h3>
+        <p>If you face any problems getting till here, check out the final code in the repo.</p>
+    </div>
+</div>

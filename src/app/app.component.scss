@@ -1,0 +1,63 @@
+.mainContainer {
+  display: flex;
+  .drawer {
+    border-right: 0.2px solid grey;
+    order: 1;
+    flex: 20%;
+  }
+  .contentContainer {
+    order: 2;
+    flex: 80%;
+  }
+}
+.head-header {
+  flex: 1;
+  font-family: Google Sans, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.maintoolbar {
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  color: #3c4043;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.main-button {
+  background: #1a73e8;
+  color: #fff;
+  border-radius: 4px;
+  font-family: Google Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  padding: 6px 24px;
+  pointer-events: auto;
+  text-transform: none;
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  font: inherit;
+  margin: 0 0.29em;
+  min-width: 5.14em;
+  outline-width: 0;
+  position: relative;
+  user-select: none;
+  z-index: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.main-footer{
+}
