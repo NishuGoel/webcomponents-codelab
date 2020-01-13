@@ -1,17 +1,47 @@
-<div class="mainContainer">
+<div class="main">
 
-<div class="contentContainer">
-<header class="maintoolbar">
-    <!-- <img src="" alt="paper-icon">     -->
-    <!-- <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; height: 20px"><g class="style-scope iron-icon"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" class="style-scope iron-icon"></path></g></svg> -->
-    <h3 class="head-header">Build a web component with Angular element</h3></header>
-<body>
-    <router-outlet></router-outlet>
-</body>
+    <div class="contentContainer">
+        <header class="maintoolbar">
+            <!-- <img src="" alt="paper-icon">     -->
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon"
+                style="pointer-events: none; display: block; height: 20px">
+                <g class="style-scope iron-icon">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                        class="style-scope iron-icon"></path>
+                </g>
+            </svg>
+            <h3 class="head-header"><b>Build a web component with Angular element</b></h3>
+        </header>
+        <router-outlet></router-outlet>
+    </div>
+    <div class="drawerContainer">
+        <ng-sidebar-container style="height: 96%; width: 89%;">
+
+            <!-- A sidebar -->
+            <ng-sidebar>
+
+            </ng-sidebar>
+
+            <div ng-sidebar-content>
+                <div id="overview" class="gray-background list-items" tabindex="0" routerLink="/overview">
+                    Overview</div>
+                <div class="gray-background list-items" routerLink="/prerequisites">Pre-requisites <i
+                        class="icon-nextscreen-arrow icon-arrow"></i></div>
+                <div routerLink="/gettingsetup" class="list-items" id="gettingsetup" tabindex="0">Getting set up
+                </div>
+                <div class="list-items" tabindex="0" routerLink="/webstandards">Web component standards</div>
+
+                <div class="list-items" tabindex="0" routerLink="/angularelements">Angular Elements</div>
+                <div class="list-items" tabindex="0" routerLink="/createwithngelement">Create custom element
+                    with
+                    Angular elements</div>
+                <div class="list-items" tabindex="0" routerLink="/buildwebcomponent">Build our Web Component
+                </div>
+                <div class="list-items" tabindex="0" routerLink="/publish">Publish to npm</div>
+                <div class="list-items" tabindex="0" routerLink="/usewebcomponent">Use in other frameworks</div>
+            </div>
+
+        </ng-sidebar-container>
+    </div>
+
 </div>
-
-<div class="drawer">
-<app-drawer></app-drawer></div>
-
-</div>
-

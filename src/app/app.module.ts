@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SidebarModule } from 'ng-sidebar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +31,7 @@ import { UseInFrameworkComponent } from './use-in-framework/use-in-framework.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

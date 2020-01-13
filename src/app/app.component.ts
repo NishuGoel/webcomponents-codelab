@@ -7,23 +7,31 @@ import { SharedService } from './shared.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  routedToId: number;
+  // routedToId: number;
+  // tslint:disable-next-line: variable-name
+  private _opened = false;
+
   title = 'Build a web component with Angular Elements';
   // tslint:disable-next-line: variable-name
   constructor(private _sharedService: SharedService) { }
 
   ngOnInit() {
-    console.log( this._sharedService.routerId);
-    this.routedToId = this._sharedService.routerId;
-    if (this.routedToId) {
-      console.log(this.routedToId);
-    }
+    // console.log( this._sharedService.routerId);
+    // this.routedToId = this._sharedService.routerId;
+    // if (this.routedToId) {
+    //   console.log(this.routedToId);
+    // }
   }
 
-  public nextClicked() {
 
+  private _toggleSidebar() {
+    this._opened = !this._opened;
   }
-  public backClicked() {
 
-  }
+  // public nextClicked() {
+
+  // }
+  // public backClicked() {
+
+  // }
 }
