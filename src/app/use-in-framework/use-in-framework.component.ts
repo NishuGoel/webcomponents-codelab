@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router, RouterEvent} from '@angular/router';
 
 @Component({
   selector: 'app-use-in-framework',
@@ -6,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./use-in-framework.component.scss']
 })
 export class UseInFrameworkComponent implements OnInit {
-
-  constructor() { }
-
   ngOnInit() {
   }
 

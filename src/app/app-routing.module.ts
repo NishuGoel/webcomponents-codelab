@@ -10,7 +10,6 @@ import { PublishComponent } from './publish/publish.component';
 import { UseInFrameworkComponent } from './use-in-framework/use-in-framework.component';
 import { WebStandardsComponent } from './web-standards/web-standards.component';
 
-
 const routes: Routes = [
   {
     path: 'overview',
@@ -43,6 +42,7 @@ const routes: Routes = [
   {
     path: 'publish',
     component: PublishComponent
+    // loadChildren: () => import('./publish/publish.module').then(mod => mod.PublishModule)
   },
   {
     path: 'usewebcomponent',

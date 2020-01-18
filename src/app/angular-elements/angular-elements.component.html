@@ -1,6 +1,6 @@
 <div class="content-overview">
     <div class="inner-style">
-        <h2 class="content-heading"><span class="style-scope ">6</span>. <span
+        <h2 class="content-heading"><span class="style-scope ">5</span>. <span
                 class="style-scope google-codelab-step">Angular Elements</span></h2>
         <p>Starting Angular v6, we can use regular Angular components as web components and load these components inside
             any of the frameworks/libraries or a JavaScript code.</p>
@@ -8,5 +8,16 @@
             Angular Elements is an Angular package that helps us create regular Angular components as Web components
             (custom elements) and use them in other technologies.</p>
         <div style="text-align: center; "><img src="../../assets/images/ngEle.png" alt="AngularElements.png"></div>
+
+        <p>The Angular Elements package exposes a <b>createCustomElement()</b> API to help the Angular component
+            interact with
+            the DOM API. This transforming of an Angular component to a custom element provides all the required Angular
+            functionality to the browser and implements the <b>NgElementConstructor</b> interface, which in turn creates
+            a
+            constructor class helping to produce a self bootstrap instance of the component.</p>
+
+        <p>This also allows us to leverage dependency injection. When we create a custom
+            element using Angular Elements, we pass in a reference to the current module's injector. This will
+            help share the context across multiple elements.</p>
     </div>
 </div>
