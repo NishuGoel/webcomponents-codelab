@@ -7,7 +7,7 @@
         </h3>
         <div style="text-align: center; "><img src="../../assets/images/ngElementPackage.png"
                 alt="elementsDependency.png"></div> <br><br>
-        <div class="content-tag"><code class="icon-code-style">npm install --save @webcomponents/webcomponentsjs</code>
+        <div class="content-tag"><code class="icon-code-style">npm install --save @webcomponents/custom-elements</code>
         </div>
         <pre style="background: darkgray; padding: 6px;"><code style=" color: black;">import ‘@webcomponents/custom-elements/src/native-shim’;
 import ‘@webcomponents/custom-elements/custom-elements.min’;</code></pre>
@@ -24,7 +24,7 @@ export class ComponentName {{'{'}}
     title = 'custom-elements-demo';
 {{'}'}}</code></pre>
         <p>The selector name will be the one used while creating the web-component. Also, you would want to give it a
-            generic name as this web component is going to be a re-usable one which you’d definitely want to use in your
+            generic name as this web component is going to be a re-usable one which you'd definitely want to use in your
             other projects as well.
             The next step then is to create the custom Element inside the module of your app. To do this, we first need
             to declare it inside the entryComponents array inside NgModule.</p>
@@ -59,5 +59,7 @@ export class FeatureModule   {{'{'}}
             Angular component recognizes this custom Element, we add CUSTOM_ELEMENTS_SCHEMA in the schemas array in
             NgModule inside AppModule.</p>
         <p> You custom Element is now ready to be used and is accessible inside any of your Angular projects.</p>
+        <div style="text-align: center; "><img src="../../assets/images/ngWebComp.PNG"
+            alt="elementsDependency.png"></div>
     </div>
 </div>

@@ -14,6 +14,7 @@ import { AngularElementsComponent } from './angular-elements/angular-elements.co
 import { BuildwithElementsComponent } from './buildwith-elements/buildwith-elements.component';
 import { PublishComponent } from './publish/publish.component';
 import { UseInFrameworkComponent } from './use-in-framework/use-in-framework.component';
+import { SourceCodeComponent } from './source-code/source-code.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UseInFrameworkComponent } from './use-in-framework/use-in-framework.com
     AngularElementsComponent,
     BuildwithElementsComponent,
     PublishComponent,
-    UseInFrameworkComponent
+    UseInFrameworkComponent,
+    SourceCodeComponent
   ],
   imports: [
     BrowserModule,

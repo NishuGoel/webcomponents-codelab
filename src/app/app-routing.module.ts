@@ -9,6 +9,7 @@ import { BuildwithElementsComponent } from './buildwith-elements/buildwith-eleme
 import { PublishComponent } from './publish/publish.component';
 import { UseInFrameworkComponent } from './use-in-framework/use-in-framework.component';
 import { WebStandardsComponent } from './web-standards/web-standards.component';
+import { SourceCodeComponent } from './source-code/source-code.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'usewebcomponent',
     component: UseInFrameworkComponent
+  },
+  {
+    path: 'sourcecode',
+    component: SourceCodeComponent
   },
   {
     path: '',
